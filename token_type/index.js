@@ -33,7 +33,11 @@ module.exports.profile = (event, context, callback) => {
 
 module.exports.auth = (event, context, callback) => {
 
+    console.log(event);
+    console.log("==================");
     console.log(event.authorizationToken);
+    console.log("==================");
+
     var token = event.authorizationToken;
     /*
      *

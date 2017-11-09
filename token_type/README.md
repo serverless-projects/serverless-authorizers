@@ -14,4 +14,6 @@ curl --header "Authorization: deny" ${url} # Should not work
 curl --header "Authorization: unauthorized" ${url} # Should not work
 curl --header "Authorization: blabla" ${url} # Should not work
 curl ${url} # Should not work
+
+sls logs -f auth # see the logs with event details
 ```
