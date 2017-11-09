@@ -35,7 +35,7 @@ module.exports.auth = (event, context, callback) => {
 
     console.log(event);
     console.log("==================");
-    console.log("Authorization: ",event.headers["Authorization"]);
+    console.log("Authorization: ", event.headers["Authorization"]);
     console.log("==================");
 
     var token = event.headers["Authorization"];
