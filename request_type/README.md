@@ -1,5 +1,5 @@
 # Serverless Authorizer
-Example of a service that uses API Gateway custom authorizer feature to authorize your endpoints with TOKEN type
+Example of a service that uses API Gateway custom authorizer feature to authorize your endpoints with REQUEST type
 
 ## Usage
 
