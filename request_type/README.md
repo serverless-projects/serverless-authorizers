@@ -16,4 +16,6 @@ curl --header "Authorization: blabla" ${url} # Should not work
 curl ${url} # Should not work
 
 sls logs -f auth # see the logs with event details
+
+sls remove # remove the whole stack
 ```
