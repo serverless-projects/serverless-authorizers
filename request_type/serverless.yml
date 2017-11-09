@@ -12,8 +12,6 @@ functions:
           authorizer:
             name: auth
             resultTtlInSeconds: 300
-            identitySource: method.request.header.Authorization, context.identity.sourceIp
-            identityValidationExpression: someRegex
             type: request
   auth:
     handler: index.auth
