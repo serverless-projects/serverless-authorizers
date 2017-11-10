@@ -45,7 +45,7 @@ $ curl https://c7vrnckca1.execute-api.us-east-1.amazonaws.com/dev/todos
 $ curl --header "x-api-key: BgSIOQeI0C5rCU1WUkTDB4lG506LSeFCuXVpV653" https://c7vrnckca1.execute-api.us-east-1.amazonaws.com/dev/todos
 []
 
-$ serverless logs -f auth # see the logs with event details
+$ serverless logs -f list # see the logs with event details
 
 $ serverless remove # remove the whole stack
 ```
