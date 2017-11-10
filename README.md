@@ -11,7 +11,7 @@ This is the sample to use token type in custom authorizer
 
 Ths is the sample to use request type in custom authorizer.
 
-### ./api_ley
+### ./api_key
 
 Ths is the sample to use api-key as authorizer.
 
