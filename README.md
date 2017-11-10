@@ -1,7 +1,7 @@
-# serverless-custom-authorizers
-Example of that uses API Gateway custom authorizer feature to authorize your endpoints with TOKEN and REQUEST types
+# serverless-authorizers
+Example of that uses API Gateway authorizer features to authorize your endpoints with different ways
 
-## token type
+## authorizer type
 
 ### ./token_type
 
@@ -10,6 +10,10 @@ This is the sample to use token type in custom authorizer
 ### ./request_type
 
 Ths is the sample to use request type in custom authorizer.
+
+### ./api_ley
+
+Ths is the sample to use api-key as authorizer.
 
 ## reference:
 
