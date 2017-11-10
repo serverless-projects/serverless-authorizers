@@ -4,7 +4,7 @@ Example of a service that uses API Gateway custom authorizer feature to authoriz
 ## Usage
 
 ```
-cd serverless-authorizer/token_type
+cd serverless-authorizers/token_type
 serverless deploy
 
 # Notice the displayed endpoint after deployment

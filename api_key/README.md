@@ -4,7 +4,7 @@ Example of a service that uses API Gateway api-key feature to authorize your end
 ## Usage
 
 ```
-$ cd serverless-authorizer/api_key
+$ cd serverless-authorizers/api_key
 $ serverless deploy
 
 Serverless: Packaging service...
