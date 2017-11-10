@@ -48,10 +48,10 @@ $ curl --header "x-api-key: BgSIOQeI0C5rCU1WUkTDB4lG506LSeFCuXVpV653" https://c7
 $ serverless logs -f auth # see the logs with event details
 
 $ serverless remove # remove the whole stack
+```
 
 ## references:
 
 https://github.com/serverless/examples/tree/master/aws-node-rest-api-with-dynamodb
 
 https://github.com/serverless-lambda/serverless-web-monitor/blob/master/serverless.yml
-```
