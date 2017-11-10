@@ -19,3 +19,9 @@ sls logs -f auth # see the logs with event details
 
 sls remove # remove the whole stack
 ```
+
+## Notes
+
+The identitySource doesn't have to be Authorization. You can define any header.
+
+    identitySource: method.request.header.Custom
