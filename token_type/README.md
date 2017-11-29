@@ -22,6 +22,8 @@ sls remove # remove the whole stack
 
 ## Notes
 
-The identitySource doesn't have to be Authorization. You can define any header.
+For a TOKEN authorizer, identitySource is required and specifies the request header mapping expression for the custom header holding the authorization token submitted by the client. For example, if the token header name is `Auth`, the header mapping expression is `method.request.header.Auth`.
 
-    identitySource: method.request.header.Custom
+Refer: 
+
+[Authorizer identitySource](https://docs.aws.amazon.com/apigateway/api-reference/resource/authorizer/#identitySource)
