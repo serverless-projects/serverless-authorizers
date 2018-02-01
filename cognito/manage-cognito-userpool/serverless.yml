@@ -1,0 +1,88 @@
+service:
+  name: ${self:custom.service}
+
+frameworkVersion: ">=1.1.0 <2.0.0"
+
+provider:
+  name: aws
+  runtime: nodejs6.10
+  memorySize: 512
+
+custom:
+  service: serverless-cognito-userpool
+  stage: ${opt:stage, self:provider.stage}
+
+resources:
+  Resources:
+    UserPool:
+      Type: "AWS::Cognito::UserPool"
+      Properties:
+        UserPoolName: ${self:custom.service}-${self:custom.stage}-user-pool
+        SmsVerificationMessage: "Your verification code is {####}."
+        AutoVerifiedAttributes:
+          - email
+        MfaConfiguration: "OFF"
+        EmailVerificationSubject: "Your api gateway verification code"
+        EmailVerificationMessage: "Your api gateway verification code is {####}"
+        SmsAuthenticationMessage: "Your api gateway authentication code is {####}"
+        Schema:
+          - Name: name
+            AttributeDataType: String
+            Mutable: true
+            Required: false
+          - Name: email
+            AttributeDataType: String
+            Mutable: false
+            Required: true
+          - Name: phone_number
+            AttributeDataType: String
+            Mutable: true
+            Required: false
+        Policies:
+          PasswordPolicy:
+            RequireLowercase: true
+            RequireSymbols: false
+            RequireNumbers: true
+            MinimumLength: 8
+            RequireUppercase: true
+        AdminCreateUserConfig:
+          InviteMessageTemplate:
+            EmailMessage: "Your Digispeaker username is {username} and temporary password is {####}."
+            EmailSubject: "Your temporary api gateway password"
+            SMSMessage: "Your Digispeaker username is {username} and temporary password is {####}."
+          UnusedAccountValidityDays: 7
+          AllowAdminCreateUserOnly: false
+
+    # Creates a User Pool Client to be used by the identity pool
+    UserPoolClient:
+      Type: "AWS::Cognito::UserPoolClient"
+      Properties:
+        ClientName: ${self:custom.service}-${self:custom.stage}-client
+        GenerateSecret: false
+        UserPoolId: 
+          Ref: UserPool
+
+    UserPoolGroupAdmin:
+      Type: "AWS::Cognito::UserPoolGroup"
+      Properties:
+        GroupName: ${self:custom.service}-${self:custom.stage}-group-admin
+        UserPoolId:
+          Ref: UserPool
+
+    UserPoolGroup01:
+      Type: "AWS::Cognito::UserPoolGroup"
+      Properties:
+        GroupName: ${self:custom.service}-${self:custom.stage}-group-1
+        UserPoolId:
+          Ref: UserPool
+
+  Outputs:
+    UserPoolId:
+      Value:
+        Ref: UserPool
+    UserPoolIdARN:
+      Value:
+        "Fn::GetAtt": [ UserPool, Arn ]
+    UserPoolClientId:
+      Value:
+        Ref: UserPoolClient    
