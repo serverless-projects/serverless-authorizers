@@ -1,0 +1,12 @@
+{
+  "name": "cognito_test",
+  "version": "1.0.0",
+  "description": "cognito_test",
+  "author": "",
+  "license": "MIT",
+  "scripts": {},
+  "dependencies": {
+    "amazon-cognito-identity-js": "^1.31.0",
+    "aws-sdk": "^2.211.0"
+  }
+}
