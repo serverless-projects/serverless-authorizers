@@ -5,8 +5,8 @@ This demo shows the real three tokens in the aws document https://amzn.to/2fo77U
 ## Preparation
 
 * create cognito user pool
-* create a user in cognito user pool. If you want to create new user with command, reference `signup.sh`
-* update user pool id and client id in test.js
+* create at least one user in cognito user pool. If you want to create new user with command, reference `signup.sh`
+* update user pool id and client id in `test.js`
 
 ## Usage
 
