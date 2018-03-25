@@ -4,7 +4,7 @@ This demo shows the real three tokens in the aws document https://amzn.to/2fo77U
 
 ## Preparation
 
-* create cognito user pool
+* create cognito user pool (you can reference the serverless stack in [../create_coginto_userpool/serverless.yml])
 * create at least one user in cognito user pool. If you want to create new user with command, reference `signup.sh`
 * update user pool id and client id in `test.js`
 
