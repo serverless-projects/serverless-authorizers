@@ -1,6 +1,6 @@
 # Tokens with User Pools
 
-This demo shows the real three tokens in the aws document https://amzn.to/2fo77UI
+This demo shows the real three tokens in the aws document [Using Tokens with User Pools](https://amzn.to/2fo77UI). It also helps you to fully undertand how the payload looks like. 
 
 ## Preparation
 
@@ -15,6 +15,13 @@ run
     $ npm install; node test.js
     
     userData: {"Username":"bill","Pool":{"userPoolId":"....
+    ===========================
+    Result methods: idToken,refreshToken,accessToken,clockDrift
+    idToken methods: jwtToken,payload
+    accessToken methods: jwtToken,payload
+    refreshToken methods: token
+    ID token payload's method: sub,email_verified,gender,iss,phone_number_verified,cognito:username,given_name,aud,event_id,token_use,auth_time,phone_number,exp,iat,family_name,email
+    user's mailbox: abc@example.com
     ===========================
     ID Token: eyJraWQiOiJoTxxxxVtZm1K5wZmIFA
     ===========================
