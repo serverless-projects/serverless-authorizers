@@ -24,6 +24,6 @@ run
 
 You should get three tokens: id token, access token and refresh token
 
-ID token is the most useful token you need. For example, with this ID token, you can play around with the serverless example
+ID token is the most useful token you need. 
 
-[API Gateway Authorizer Function for Auth0 or AWS Cognito using the JWKS method](https://github.com/serverless/examples/tree/master/aws-node-auth0-cognito-custom-authorizers-api)
+For example, with this ID token, you can play around with [API Gateway Authorizer Function for Auth0 or AWS Cognito using the JWKS method](https://github.com/serverless/examples/tree/master/aws-node-auth0-cognito-custom-authorizers-api)
