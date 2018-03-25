@@ -10,3 +10,5 @@ This demo shows the real three tokens in the aws document https://amzn.to/2fo77U
 * run `npm install; node test.js`
 
 You should get three tokens: id token, access token and refresh token
+
+I also added codes to show how to get these three token's methods and how to show the user's attributes, for example, his/her emailbox.
