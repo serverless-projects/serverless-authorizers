@@ -26,6 +26,4 @@ You should get three tokens: id token, access token and refresh token
 
 ID token is the most useful token you need. 
 
-For example, with this ID token, you can play around with [API Gateway Authorizer Function for Auth0 or AWS Cognito using the JWKS method](https://github.com/serverless/examples/tree/master/aws-node-auth0-cognito-custom-authorizers-api)
-
 I also added codes to show how to get these three token's methods and how to show the user's attributes, for example, his/her emailbox.
