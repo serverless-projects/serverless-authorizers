@@ -1,6 +1,6 @@
 # Tokens with User Pools
 
-This demo shows the real three tokens in the aws document [Using Tokens with User Pools](https://amzn.to/2fo77UI). It also helps you to fully undertand how the payload looks like. 
+This demo shows the real cognito three tokens in the aws document [Using Tokens with User Pools](https://amzn.to/2fo77UI). It also helps you to fully undertand how the payload looks like. 
 
 ## Preparation
 
