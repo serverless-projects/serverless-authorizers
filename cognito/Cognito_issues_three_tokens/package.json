@@ -1,8 +1,8 @@
 {
-  "name": "cognito_test",
+  "name": "cognito-token",
   "version": "1.0.0",
-  "description": "cognito_test",
-  "author": "",
+  "description": "Generate Cognito user pool's three tokens: id token, access and refresh token",
+  "author": "Bill Wang",
   "license": "MIT",
   "scripts": {},
   "dependencies": {
