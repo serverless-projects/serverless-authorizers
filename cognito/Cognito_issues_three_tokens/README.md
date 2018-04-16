@@ -1,3 +1,15 @@
+# ABANDONED
+
+This code has been abandoned, I made a npm package on it 
+
+repo: https://github.com/serverless-projects/cognito-token
+
+Usage: https://github.com/serverless-projects/cognito-token/blob/master/README.md
+
+npm package: https://www.npmjs.com/package/cognito-token
+
+
+
 # Tokens with User Pools
 
 This demo shows the real cognito three tokens in the aws document [Using Tokens with User Pools](https://amzn.to/2fo77UI). It also helps you to fully undertand how the payload looks like. 
