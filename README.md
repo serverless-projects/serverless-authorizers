@@ -1,5 +1,5 @@
 # serverless-authorizers
-Example of that uses API Gateway authorizer features to authorize your endpoints with different ways
+Examples to use API Gateway authorizer features to authorize your endpoints with different ways
 
 ## authorizer type
 
