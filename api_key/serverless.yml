@@ -8,7 +8,7 @@ custom:
 
 provider:
   name: aws
-  runtime: nodejs4.3
+  runtime: nodejs10.x
   environment:
     DYNAMODB_TABLE: ${self:service}-${self:custom.stage}-todos
   iamRoleStatements:
