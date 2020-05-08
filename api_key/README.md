@@ -45,6 +45,10 @@ $ curl https://c7vrnckca1.execute-api.us-east-1.amazonaws.com/dev/todos
 $ curl --header "x-api-key: BgSIOQeI0C5rCU1WUkTDB4lG506LSeFCuXVpV653" https://c7vrnckca1.execute-api.us-east-1.amazonaws.com/dev/todos
 []
 
+$ curl -X POST --header "x-api-key: BgSIOQeI0C5rCU1WUkTDB4lG506LSeFCuXVpV653" https://c7vrnckca1.execute-api.us-east-1.amazonaws.com/dev/todos --data '{ "text": "Learn Serverless" }'
+
+{"id":"770f1000-90ce-11ea-a1cd-6d8107cbbbd5","text":"Learn Serverless","checked":false,"createdAt":1588902702335,"updatedAt":1588902702335}
+
 $ serverless logs -f list # see the logs with event details
 
 $ serverless remove # remove the whole stack
